@@ -1,0 +1,120 @@
+body{
+    background-color:  hsl(210, 46%, 95%);
+    font-size: 13px;
+    color: hsl(210, 46%, 95%);
+    font-family: 'Barlow Semi Condensed';     
+    margin: 0;    
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8rem ;
+}
+
+.grid-conteiner{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 21fr 19fr;
+    gap: 2rem;            
+}
+
+.conteiner{
+    padding: 1.5rem 2rem; 
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.testimonial-header p{
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 0;
+}
+
+.testimonial-paragraph p{
+    margin: 0;
+}
+
+.daniel{
+    background-color: hsl(263, 55%, 52%);
+    grid-column: span 2;
+    background-image: url('images/bg-pattern-quotation.svg');
+    background-repeat: no-repeat;
+    background-position: top 0 right 4rem;
+}
+
+.jonathan{
+    background-color: hsl(217, 19%, 35%);
+}
+
+.jeanette{
+    background-color: hsl(0, 0%, 100%);
+    grid-column: 1;
+    box-shadow: 45px 60px 24px -15px hsl(0, 0%, 81%, 0.3);   
+}
+
+.patrick{
+    background-color: hsl(219, 29%, 14%);
+    grid-column: span 2;
+}
+
+.kira{
+    background-color: hsl(0, 0%, 100%);
+    grid-column: 4;
+    grid-row: 1 / span 2;
+    box-shadow: 45px 60px 24px -15px hsl(0, 0%, 81%, 0.3);   
+}
+
+.verified-graduate{
+    opacity: 0.6;
+}
+
+.testimonial-paragraph{
+    opacity: 0.7;
+}
+
+.card-heading{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.avatar img{
+    border-radius: 50px;
+    width: 2rem;
+}
+
+.dark-text{
+    color: hsl(217, 19%, 35%);
+}
+
+.daniel-border{
+    border: 2px solid hsl(210, 46%, 95%, 0.5);
+}
+
+.violet-border{
+    border: 2px solid hsl(263, 55%, 52%);
+}
+
+.attribution { 
+    font-size: 0.5rem; 
+    text-align: center;  
+    color: hsl(219, 29%, 14%);   
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media(max-width: 950px){
+    main{
+        padding: 5rem 2rem ;
+    }
+    .grid-conteiner{
+        display: flex;
+        flex-direction: column;          
+    }
+}
